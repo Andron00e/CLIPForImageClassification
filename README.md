@@ -1,7 +1,7 @@
 # CLIPForImageClassification
 
 While standard image models train an image feature
-extractor and a linear classifier to predict some label, [CLIP](https://arxiv.org/abs/2103.00020) jointly trains an
+extractor and a linear classifier to predict the probability distribution over class labels, [CLIP](https://arxiv.org/abs/2103.00020) jointly trains an
 image encoder and a text encoder to predict the correct pairings of a batch of
 (image, text) training examples. At test time the learned text encoder synthe-
 sizes a zero-shot linear classifier by embedding the names or descriptions of the
