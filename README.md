@@ -9,7 +9,7 @@ target dataset’s classes.
 
 ## Implementation of OpenAI CLIP model directly for Image Classification task.
 
-[CLIPForImageClassification Model Card](https://huggingface.co/Andron00e/CLIPForImageClassification-v1) [OpenAI CLIP Model Card](https://github.com/openai/CLIP/blob/main/model-card.md)
+[CLIPForImageClassification Model Card](https://huggingface.co/Andron00e/CLIPForImageClassification-v1),  [OpenAI CLIP Model Card](https://github.com/openai/CLIP/blob/main/model-card.md)
 
 ## Useful links
 [OpenAI model on hub](https://huggingface.co/openai/clip-vit-large-patch14)
