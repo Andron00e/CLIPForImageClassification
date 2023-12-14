@@ -12,7 +12,7 @@ class CLIPForImageClassification(CLIPPreTrainedModel):
         for p in self.clip.parameters():
             p.requires_grad=False
         self.num_labels = num_labels
-        self.criterion = torch.nn.CrossEntropyLoss()
+        self.criterion = CrossEntropyLoss()
         self.head = nn.Linear(self.config.projection_dim, num_labels)
         self.processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
