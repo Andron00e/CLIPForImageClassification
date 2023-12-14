@@ -12,6 +12,7 @@ class CLIPForImageClassification(CLIPPreTrainedModel):
         for p in self.clip.parameters():
             p.requires_grad=False
         self.num_labels = num_labels
+        self.criterion = torch.nn.CrossEntropyLoss()
         self.head = nn.Linear(self.config.projection_dim, num_labels)
         self.processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
@@ -43,6 +44,6 @@ class CLIPForImageClassification(CLIPPreTrainedModel):
         loss = None
         if labels is not None:
             labels = labels.to(logits.device)
-            loss = CrossEntropyLoss(logits, labels)
+            loss = self.criterion(logits, labels)
 
         return {"loss": loss, "logits": logits}
