@@ -3,8 +3,7 @@
 While standard image models train an image feature
 extractor and a linear classifier to predict the probability distribution over class labels, [CLIP](https://arxiv.org/abs/2103.00020) jointly trains an
 image encoder and a text encoder to predict the correct pairings of a batch of
-(image, text) training examples. At test time the learned text encoder synthe-
-sizes a zero-shot linear classifier by embedding the names or descriptions of the
+(image, text) training examples. At test time the learned text encoder synthesizes a zero-shot linear classifier by embedding the names or descriptions of the
 target dataset’s classes.
 
 ## Implementation of OpenAI CLIP model directly for Image Classification task.
